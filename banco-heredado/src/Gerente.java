@@ -1,34 +1,18 @@
 
-public class Gerente {
+public class Gerente extends Empleado{
 	
-	private String nombre;
-	private String documeto;
-	private int salario;
-	public String getNombre() {
-		return nombre;
-	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-	public String getDocumeto() {
-		return documeto;
-	}
-	public void setDocumeto(String documeto) {
-		this.documeto = documeto;
-	}
-	public int getSalario() {
-		return salario;
-	}
-	public void setSalario(int salario) {
-		this.salario = salario;
-	}
+	private String clave;
 	
-	public double getBonificacion()
+	
+	public void setClave(String clave)
 	{
-		return this.salario;
+		this.clave = clave;
 	}
-	
-	
+		
+	public boolean iniciarSesion(String clave) 
+	{
+		return clave == "MiClave93";
+	}
 	
 	
 
