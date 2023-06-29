@@ -13,7 +13,10 @@ public class Gerente extends Empleado{
 	{
 		return clave == "MiClave93";
 	}
-	
+	public double getBonificacion() 
+	{
+		return super.getSalario();
+	}
 	
 
 }
