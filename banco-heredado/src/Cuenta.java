@@ -17,6 +17,7 @@ public class Cuenta {
 			this.numero= numero;
 		} else {
 			this.agencia= agencia;
+			this.numero= numero;
 		}
 		total++;
 		System.out.println("Se va creando "+ total +" cuenta");
@@ -35,7 +36,8 @@ public class Cuenta {
 	
 	
 //---------------------Metodo Retirar-------------------------------------------
-	public boolean retirar (double monto){
+	public boolean retirar (double monto)
+	{
 		
 		if (this.saldo >= monto) {
 		this.saldo = this.saldo - monto;
@@ -47,7 +49,8 @@ public class Cuenta {
 	}
 //--------------------Metodo Transferir-----------------------------------------
 	
-	public boolean tranferir(double monto, Cuenta cuenta){
+	public boolean tranferir(double monto, Cuenta cuenta)
+	{
 		
 		if (this.saldo >= monto) {
 			this.saldo = this.saldo - monto;
@@ -61,10 +64,12 @@ public class Cuenta {
 	
 //------------------Metodo ObtenerSaldo /Get ------------------------------------
 	
-	public double getSaldo() {
+	public double getSaldo() 
+	{
 		return this.saldo;
 	}
-	public void setSaldo(double saldo) {
+	public void setSaldo(double saldo) 
+	{
 		this.saldo = saldo;
 	}
 	

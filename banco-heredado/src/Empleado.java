@@ -7,36 +7,43 @@ public class Empleado {
 	private int tipo;
 	
 	
-	public Empleado() {
-		
+	public Empleado() 
+	{
 	}
 	
 //----------------Getters y Setters-----------------------------------------------------------------	
-	public String getNombre() {
+	public String getNombre() 
+	{
 		return nombre;
 	}
-	public void setNombre(String nombre) {
+	public void setNombre(String nombre) 
+	{
 		this.nombre = nombre;
 	}
-	public String getIdentificador() {
+	public String getIdentificador() 
+	{
 		return identificador;
 	}
-	public void setIdentificador(String identificador) {
+	public void setIdentificador(String identificador) 
+	{
 		this.identificador = identificador;
 	}
-	public double getSalario() {
+	public double getSalario() 
+	{
 		return salario;
 	}
-	public void setSalario(double salario) {
+	public void setSalario(double salario) 
+	{
 		this.salario = salario;
 	}
-	
-	
-	public int getTipo() {
+
+	public int getTipo() 
+	{
 		return tipo;
 	}
 
-	public void setTipo(int tipo) {
+	public void setTipo(int tipo) 
+	{
 		this.tipo = tipo;
 	}
 
