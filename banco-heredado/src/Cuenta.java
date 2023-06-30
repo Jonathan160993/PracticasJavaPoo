@@ -11,7 +11,7 @@ public class Cuenta {
 	public Cuenta (int agencia, int numero)
 	{
 		
-		if (agencia<=0 || this.numero!=numero) {
+		if (agencia<=0) {
 			System.out.println("No se permite 0");
 			this.agencia=1;
 			this.numero= numero;
@@ -28,6 +28,15 @@ public class Cuenta {
 	    System.out.println("Tu deposito de: $" +valor+ " pesos fue exitoso :D");
 	}
 	
+//--------------------Metodo saca-----------------------------------------------
+	 public boolean saca(double valor) {
+	        if(this.saldo >= valor) {
+	            this.saldo -= valor;
+	            return true;
+	        } else {
+	            return false;
+	        }
+	    }
 	
 //-------------------Metodo Consultar saldo-------------------------------------
 	void consultarSaldo() {
@@ -41,7 +50,6 @@ public class Cuenta {
 		
 		if (this.saldo >= monto) {
 		this.saldo = this.saldo - monto;
-		System.out.println("Retiro Exitoso ----- Retiraste: $"+monto);
 		return true;
 		} 
 			System.out.println("Saldo insuficiente");
@@ -53,7 +61,7 @@ public class Cuenta {
 	{
 		
 		if (this.saldo >= monto) {
-			this.saldo = this.saldo - monto;
+			this.retirar(monto);
 			cuenta.saldo = cuenta.saldo + monto;
 			System.out.println("Transferencia Exitosa");
 			return true;
