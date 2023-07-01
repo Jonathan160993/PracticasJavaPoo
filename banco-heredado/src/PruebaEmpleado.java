@@ -3,7 +3,7 @@ public class PruebaEmpleado {
 
 		public static void main(String[] args) {
 			
-			Empleado jonathan = new Empleado();
+			Empleado jonathan = new Contador();
 			jonathan.setNombre("Jonathan");
 			jonathan.setIdentificador("16091993");
 			jonathan.setSalario(20000);

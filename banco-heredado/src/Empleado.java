@@ -1,5 +1,5 @@
 
-public class Empleado {
+public abstract class Empleado {
 
 	private String nombre;
 	private String identificador;
@@ -48,11 +48,9 @@ public class Empleado {
 	}
 
 //---------------------Metodo pata Calcular bonificacion-------------------------------------
-	public double getBonificacion()
-	{
-		return this.salario * 0.05;		
-	}
-	
-	
+	//------Metodo Abstracto-----------------------------------------------------------------
+	public abstract double getBonificacion();
+
+//-------------------------------------------------------------------------------------------	
 	
 }

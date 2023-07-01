@@ -3,7 +3,7 @@ public class PruebaControlBonificacion {
 
 	public static void main (String[] args) 
 	{
-		Empleado pedro = new Empleado();
+		Empleado pedro = new Contador();
 		pedro.setSalario(15000);
 		
 		Gerente carlos = new Gerente();
