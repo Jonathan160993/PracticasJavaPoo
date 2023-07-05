@@ -3,7 +3,7 @@ public class SistemaInterno {
 	
 	private String clave="MiClave93";
 	
-	public boolean autentica( EmpleadoAutenticable gerente)
+	public boolean autentica( Autenticable gerente)
 	{
 		boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
 		

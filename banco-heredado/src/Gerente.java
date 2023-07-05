@@ -1,5 +1,6 @@
 
-public class Gerente extends EmpleadoAutenticable{
+
+public class Gerente extends EmpleadoAutenticable implements Autenticable{
 	
 
 	public double getBonificacion() 
