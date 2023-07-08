@@ -1,16 +1,21 @@
 package prueba;
+//-----------------------------------------------------------|
+//importamos todas las clases e interfaces del paquete modelo|
+import modelo.*;//-------------------------------------------|
+//-----------------------------------------------------------|
+
 
 public class PruebaControlBonificacion {
 
 	public static void main (String[] args) 
 	{
-		modelo.Empleado pedro = new modelo.Contador();
+		Empleado pedro = new Contador();
 		pedro.setSalario(15000);
 		
-		modelo.Gerente carlos = new modelo.Gerente();
+		Gerente carlos = new modelo.Gerente();
 		carlos.setSalario(25000);
 		
-		modelo.ControBonificacion controlBonificacion = new modelo.ControBonificacion();
+		ControBonificacion controlBonificacion = new ControBonificacion();
 		
 		controlBonificacion.registrarSalario(pedro);
 		controlBonificacion.registrarSalario(carlos);

@@ -1,10 +1,13 @@
 package prueba;
-
+//-----------------------------------------|
+//Importamos solo una clase de otro paquete|
+import modelo.Gerente;//-------------------|
+//-----------------------------------------|
 public class PruebaGerente {
    
 	public static void main(String[] args) 
    {
-		modelo.Gerente gerente = new modelo.Gerente();
+		Gerente gerente = new Gerente();
 	 //gerente.setSalario(10000);
 	 //System.out.println("Tu bonificacion por tu puesto es de: $"+gerente.getBonificacion());
 	//Empleado gerente = new Empleado();

@@ -1,4 +1,8 @@
 package prueba;
+//-----------------------------------------------------------|
+//importamos todas las clases e interfaces del paquete modelo|
+import modelo.*;//-------------------------------------------|
+//-----------------------------------------------------------|
 
 public class PruebaSistemaInterno {
  

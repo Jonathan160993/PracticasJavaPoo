@@ -1,10 +1,12 @@
 package prueba;
 
+import modelo.Contador;
+
 public class PruebaEmpleado {
 
 		public static void main(String[] args) {
 			
-			modelo.Empleado jonathan = new modelo.Contador();
+			Contador jonathan = new Contador();
 			jonathan.setNombre("Jonathan");
 			jonathan.setIdentificador("16091993");
 			jonathan.setSalario(20000);
