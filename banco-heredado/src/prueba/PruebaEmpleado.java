@@ -1,9 +1,10 @@
+package prueba;
 
 public class PruebaEmpleado {
 
 		public static void main(String[] args) {
 			
-			Empleado jonathan = new Contador();
+			modelo.Empleado jonathan = new modelo.Contador();
 			jonathan.setNombre("Jonathan");
 			jonathan.setIdentificador("16091993");
 			jonathan.setSalario(20000);

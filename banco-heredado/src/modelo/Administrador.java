@@ -1,3 +1,5 @@
+package modelo;
+
 public class Administrador extends Empleado implements Autenticable {
 
 	private AutenticacionUtil util;

@@ -1,3 +1,5 @@
+package modelo;
+
 
 
 public class Gerente extends EmpleadoAutenticable implements Autenticable{
