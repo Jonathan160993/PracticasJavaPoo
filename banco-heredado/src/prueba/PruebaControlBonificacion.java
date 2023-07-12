@@ -16,7 +16,6 @@ public class PruebaControlBonificacion {
 		carlos.setSalario(25000);
 		
 		ControBonificacion controlBonificacion = new ControBonificacion();
-		
 		controlBonificacion.registrarSalario(pedro);
 		controlBonificacion.registrarSalario(carlos);
 	}

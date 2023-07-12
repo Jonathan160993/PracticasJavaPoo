@@ -1,4 +1,5 @@
 package prueba;
+
 //-----------------------------------------|
 //Importamos solo una clase de otro paquete|
 import modelo.Gerente;//-------------------|

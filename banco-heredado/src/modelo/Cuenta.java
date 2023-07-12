@@ -3,12 +3,17 @@ package modelo;
 
 public abstract class  Cuenta {
 
-	private double saldo;
+	protected double saldo;;
 	private int agencia;
 	private int numero;
 	private Cliente titular = new Cliente();
 	
 	private static int total=0;
+	
+	
+	public Cuenta() {
+
+    }
 	
 	public Cuenta (int agencia, int numero)
 	{
@@ -94,4 +99,18 @@ public abstract class  Cuenta {
 	{
 		return this.agencia;
 	}
+	 public int getNumero() {
+	        return numero;
+	    }
+
+	    public void setNumero(int numero) {
+	        if (numero > 0) {
+	            this.numero = numero;
+	        }
+	    }
+	    @Override
+	    public String toString() {
+	    	String cuenta = "Numero: " + this.numero + ", Agencia:" + this.agencia;
+	    	return cuenta;
+	    }
 }
