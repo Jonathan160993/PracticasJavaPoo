@@ -18,7 +18,7 @@ public class PruebaArrayList {
 		lista.add(cc2);//agregamos con arraylist y utilizamos el metodo add
 		
 		
-		Cuenta obtenerCuenta = (Cuenta)lista.get(0);
+		Cuenta obtenerCuenta = lista.get(0);
 		System.out.println(obtenerCuenta);
 		Cuenta obtenerCuenta1 = (Cuenta)lista.get(1);
 		System.out.println(obtenerCuenta1);
