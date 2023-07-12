@@ -35,7 +35,10 @@ public class PruebaArrayList {
 			
 		}
 		
-		
+		boolean contiene = lista.contains(cc);
+		if (contiene) {
+			System.out.println("Si");
+		}
 		
 		
 		
